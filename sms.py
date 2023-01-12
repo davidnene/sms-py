@@ -25,6 +25,6 @@ response_data = sms.send_message(
 
 if response_data["messages"][0]["status"] == "0":
     print("Message sent successfully!")
-    print(response_data)
+    ##print(response_data) ##uncomment to see the resonse data
 else:
     print(f"Message failed with error:{response_data['messages'][0]['error-text']}")
